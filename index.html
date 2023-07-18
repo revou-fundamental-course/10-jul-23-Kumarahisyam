@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+          <h1>Kalkulator BMI</h1>
+          <div class="content">
+
+            <div class="gender">
+
+              <label class="container">
+                  <input type="radio" name="radio" id="m"><p class="text">Laki - Laki</p>
+                  <span class="checkmark"></span>
+                </label>
+
+
+              <label class="container">
+                  <input type="radio" name="radio" id="f" ><p class="text">Perempuan</p>
+                    <span class="checkmark"></span>
+                  </label>
+
+          </div>
+
+            <div class="input">
+                <label for="height">Usia (Tahun)</label>
+                <input type="text" class="text-input" id="age" autocomplete="off" required/>
+            </div>
+
+
+            <div class="containerHW">
+            <div class="inputH">
+              <label for="height">Tinggi Badan(cm)</label>
+              <input type="number" id="height" required>
+            </div>
+
+            <div class="inputW">
+              <label for="weight">Berat Badan(kg)</label>
+              <input type="number" id="weight" required>
+            </div>
+          </div>
+         
+            <button class="calculate" id="submit" onclick="calculate();">Hitung BMI</button>
+          </div>
+          <div class="result">
+            <p>BMI Kamu Adalah </p>
+            <div id="result">00.00</div>
+            <p class="comment"></p>
+          </div>
+
+          <button class="tombol">Download Hasil BMI</button>
+    
+          <p>Download Aplikasi<p>
+            <a href="https://play.google.com/store/games?device=windows&utm_source=apac_med&hl=id-ID&utm_medium=hasem&utm_content=Jun1223&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-id-1003227-med-hasem-py-Evergreen-Jun1223-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700076784774177_creativeid_435392147888_device_c&gclid=Cj0KCQjwzdOlBhCNARIsAPMwjbwYnh3oGlhnU4zKOPkHshMPG4kVUrh7wDNdjRm5FCxTOaeEs1qXzJgaAm8xEALw_wcB&gclsrc=aw.ds" download>
+              <img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" height="50" />
+            </a>
+          
+      <p class="wm">Made By Kumara</p>
+   </div>
+      </div>
+
+
+      
+    <div id="myModal" class="modal">
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div></div>
+
+
+    
+<script src="script.js"></script>
+
+</body>
+</html>
